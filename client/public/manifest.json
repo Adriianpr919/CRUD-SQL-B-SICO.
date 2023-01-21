@@ -1,0 +1,25 @@
+{
+  "short_name": "React CRUD App - ADRIAN PAEZ.",
+  "name": "React CRUD App - ADRIAN PAEZ.",
+  "icons": [
+    {
+      "src": "configuration.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "configuration.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "configuration.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

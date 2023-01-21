@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="React CRUD App - ADRIAN PAEZ." />
+  <link rel="shortcut icon" type="image/x-icon" href="%PUBLIC_URL%/configuration.ico" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/configuration.ico" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title data-rh="true">React CRUD App - ADRIAN PAEZ.</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!--===============================================================================================-->
+  <link href="%PUBLIC_URL%/fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet" type="text/css" media="all">
+  <link href="%PUBLIC_URL%/fontawesome-free-6.2.0-web/css/brands.css" rel="stylesheet" type="text/css" media="all">
+  <link href="%PUBLIC_URL%/fontawesome-free-6.2.0-web/css/solid.css" rel="stylesheet" type="text/css" media="all">
+  <link href="%PUBLIC_URL%/fontawesome-free-6.2.0-web/css/v5-font-face.css" rel="stylesheet" type="text/css"
+    media="all">
+  <link href="%PUBLIC_URL%/fontawesome-free-6.2.0-web/css/all.css" rel="stylesheet" type="text/css" media="all">
+  <!--===============================================================================================-->
+  <script defer src="%PUBLIC_URL%/fontawesome-free-6.2.0-web/js/brands.js" type="text/javascript"
+    charset="UTF-8"></script>
+  <script defer src="%PUBLIC_URL%/fontawesome-free-6.2.0-web/js/solid.js" type="text/javascript"
+    charset="UTF-8"></script>
+  <script defer src="%PUBLIC_URL%/fontawesome-free-6.2.0-web/js/fontawesome.js" type="text/javascript"
+    charset="UTF-8"></script>
+  <!--===============================================================================================-->
+  <link href="%PUBLIC_URL%/assets/css/styleBanner.css" rel="stylesheet" type="text/css" media="all">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" media="all"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:300,400,500,600,700,800,900&amp;display=swap">
+  <link rel="stylesheet" type="text/css" media="all" href="%PUBLIC_URL%/vendors/simplebar/simplebar.min.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="%PUBLIC_URL%/assets/css/theme-rtl.min.css" id="style-rtl" />
+  <link rel="stylesheet" type="text/css" media="all" href="%PUBLIC_URL%/assets/css/theme.min.css" id="style-default" />
+  <link rel="stylesheet" type="text/css" media="all" href="%PUBLIC_URL%/assets/css/user-rtl.min.css"
+    id="user-style-rtl" />
+  <link rel="stylesheet" type="text/css" media="all" href="%PUBLIC_URL%/assets/css/user.min.css"
+    id="user-style-default" />
+  <link rel="stylesheet" type="text/css" media="all" href="%PUBLIC_URL%/vendors/prism/prism-okaidia.css" />
+  <!--===============================================================================================-->
+  <script type="text/javascript" charset="UTF-8" src="%PUBLIC_URL%/assets/js/config.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="%PUBLIC_URL%/vendors/simplebar/simplebar.min.js"></script>
+  <script type="text/javascript" charset="UTF-8">
+    var isRTL = JSON.parse(localStorage.getItem('isRTL'));
+    if (isRTL) {
+      var linkDefault = document.getElementById('style-default');
+      var userLinkDefault = document.getElementById('user-style-default');
+      linkDefault.setAttribute('disabled', true);
+      userLinkDefault.setAttribute('disabled', true);
+      document.querySelector('html').setAttribute('dir', 'rtl');
+    } else {
+      var linkRTL = document.getElementById('style-rtl');
+      var userLinkRTL = document.getElementById('user-style-rtl');
+      linkRTL.setAttribute('disabled', true);
+      userLinkRTL.setAttribute('disabled', true);
+    }
+  </script>
+  <!--===============================================================================================-->
+  <script type="text/javascript" charset="UTF-8"
+    src="%PUBLIC_URL%/vendors/datatables.net-bs5/dataTables.bootstrap5.min.css"></script>
+  <!--===============================================================================================-->
+  <script type="text/javascript" charset="UTF-8" src="%PUBLIC_URL%/vendors/select2/select2.min.css"></script>
+  <script type="text/javascript" charset="UTF-8"
+    src="%PUBLIC_URL%/vendors/select2-bootstrap-5-theme/select2-bootstrap-5-theme.min.css"></script>
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" media="all" href="%PUBLIC_URL%/vendors/choices/choices.min.css" />
+  <!--===============================================================================================-->
+</head>
+
+<body>
+  <div id="root"></div>
+  <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+  <script>
+    new Datatable(element, data, { striped: true, bordered: true, hover: true, fullPagination: true, edit: true, fixedHeader: true, borderColor: "dark " })
+  </script>
+  <!--===============================================================================================-->
+  <script type="text/javascript" charset="UTF-8" src="%PUBLIC_URL%/vendors/popper/popper.min.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="%PUBLIC_URL%/vendors/bootstrap/bootstrap.min.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="%PUBLIC_URL%/vendors/anchorjs/anchor.min.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="%PUBLIC_URL%/vendors/is/is.min.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="%PUBLIC_URL%/vendors/prism/prism.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="%PUBLIC_URL%/vendors/fontawesome/all.min.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="%PUBLIC_URL%/vendors/lodash/lodash.min.js"></script>
+  <script type="text/javascript" charset="UTF-8"
+    src="%PUBLIC_URL%/polyfill.io/v3/polyfill.min58be.js?features=window.scroll"></script>
+  <script type="text/javascript" charset="UTF-8" src="%PUBLIC_URL%/vendors/list.js/list.min.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="%PUBLIC_URL%/assets/js/theme.js"></script>
+  <!--===============================================================================================-->
+  <script type="text/javascript" charset="UTF-8"
+    src="%PUBLIC_URL%/vendors/datatables.net/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" charset="UTF-8"
+    src="%PUBLIC_URL%/vendors/datatables.net-bs5/dataTables.bootstrap5.min.js"></script>
+  <script type="text/javascript" charset="UTF-8"
+    src="%PUBLIC_URL%/vendors/datatables.net-fixedcolumns/dataTables.fixedColumns.min.js"></script>
+  <!--===============================================================================================-->
+  <script type="text/javascript" charset="UTF-8" src="%PUBLIC_URL%/vendors/jquery/jquery.min.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="%PUBLIC_URL%/vendors/select2/select2.min.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="%PUBLIC_URL%/vendors/select2/select2.full.min.js"></script>
+  <!--===============================================================================================-->
+  <script type="text/javascript" charset="UTF-8" src="%PUBLIC_URL%/vendors/choices/choices.min.js"></script>
+  <!--===============================================================================================-->
+  <script type="text/javascript" charset="UTF-8">
+    var isFluid = JSON.parse(localStorage.getItem('isFluid'));
+    if (isFluid) {
+      var container = document.querySelector('[data-layout]');
+      container.classList.remove('container');
+      container.classList.add('container-fluid');
+    }
+  </script>
+  <!--===============================================================================================-->
+  <script type="text/javascript" charset="UTF-8">
+    var navbarPosition = localStorage.getItem('navbarPosition');
+    var navbarVertical = document.querySelector('.navbar-vertical');
+    var navbarTopVertical = document.querySelector('.content .navbar-top');
+    var navbarTop = document.querySelector('[data-layout] .navbar-top:not([data-double-top-nav');
+    var navbarDoubleTop = document.querySelector('[data-double-top-nav]');
+    var navbarTopCombo = document.querySelector('.content [data-navbar-top="combo"]');
+
+    if (localStorage.getItem('navbarPosition') === 'double-top') {
+      document.documentElement.classList.toggle('double-top-nav-layout');
+    }
+
+    if (navbarPosition === 'top') {
+      navbarTop.removeAttribute('style');
+      navbarTopVertical.remove(navbarTopVertical);
+      navbarVertical.remove(navbarVertical);
+      navbarTopCombo.remove(navbarTopCombo);
+      navbarDoubleTop.remove(navbarDoubleTop);
+    } else if (navbarPosition === 'combo') {
+      navbarVertical.removeAttribute('style');
+      navbarTopCombo.removeAttribute('style');
+      navbarTop.remove(navbarTop);
+      navbarTopVertical.remove(navbarTopVertical);
+      navbarDoubleTop.remove(navbarDoubleTop);
+    } else if (navbarPosition === 'double-top') {
+      navbarDoubleTop.removeAttribute('style');
+      navbarTopVertical.remove(navbarTopVertical);
+      navbarVertical.remove(navbarVertical);
+      navbarTop.remove(navbarTop);
+      navbarTopCombo.remove(navbarTopCombo);
+    } else {
+      navbarVertical.removeAttribute('style');
+      navbarTopVertical.removeAttribute('style');
+      navbarTop.remove(navbarTop);
+      navbarDoubleTop.remove(navbarDoubleTop);
+      navbarTopCombo.remove(navbarTopCombo);
+    }
+  </script>
+  <!--===============================================================================================-->
+</body>
+
+</html>
